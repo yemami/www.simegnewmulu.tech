@@ -32,10 +32,11 @@ jobs:
       - name: Install Dependencies
         run: |
           node --version
+          ng build
           npm ci --production
 
       - name: Build Static Website
-        run: ng build
+        run: npm run build
 
       - name: Copy files to the production website with the AWS CLI
         run: |
