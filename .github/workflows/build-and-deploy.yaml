@@ -32,6 +32,9 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
 
+      - name: Install Dev Kit
+        run: npm install @angular-devkit/build-angular --force
+
       - name: Install Dependencies
         run: |
           node --version
