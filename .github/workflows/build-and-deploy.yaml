@@ -29,10 +29,12 @@ jobs:
         with:
           node-version: "18"
 
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+
       - name: Install Dependencies
         run: |
           node --version
-          npm install @angular/cli --save-dev
           npm ci --production
 
       - name: Build Static Website
