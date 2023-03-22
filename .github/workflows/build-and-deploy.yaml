@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET: www.simegnewmulu.tech
-      DIST: dist
+      DIST: dist/frontend
       REGION: us-east-1
       DIST_ID: E1V3HWCXCURVFR
 
