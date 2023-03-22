@@ -34,7 +34,7 @@ jobs:
           npm ci
 
       - name: Build Angular App
-        run: ng build --prod
+        run: ng build
 
       - name: Deploy to S3 Bucket
         run: |
