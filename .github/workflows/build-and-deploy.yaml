@@ -1,5 +1,4 @@
----
-name: Build and Deploy React App to CloudFront
+name: Build and Deploy Angular App to CloudFront
 on:
   push:
     branches: [main]
@@ -24,25 +23,26 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.REGION }}
 
-      - name: Set up Node.js environment
+      - name: Install Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "18"
+          node-version: "14"
 
       - name: Install Dependencies
         run: |
-          node --version
-          npm ci --production
+          npm install -g @angular/cli
+          npm ci
 
-      - name: Build Static Website
-        run: npm run build
+      - name: Build Angular App
+        run: ng build --prod
 
-      - name: Copy files to the production website with the AWS CLI
+      - name: Deploy to S3 Bucket
         run: |
-          aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
+          aws s3 sync --delete ${DIST} s3://${BUCKET} --region ${REGION}
 
-      - name: Copy files to the production website with the AWS CLI
+      - name: Create CloudFront Invalidation
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id ${{ env.DIST_ID }} \
-            --paths "/*"
+            --distribution-id ${DIST_ID} \
+            --paths "/*" \
+            --region ${REGION}
