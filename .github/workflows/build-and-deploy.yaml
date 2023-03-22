@@ -1,4 +1,5 @@
-name: Build and Deploy React App to CloudFront
+---
+name: Build and Deploy Angular App to CloudFront
 on:
   push:
     branches: [main]
@@ -27,12 +28,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "18"
-
-      - name: Update @angular/compiler-cli package
-        run: npm install @angular/compiler-cli@15.1.3
-
-      - name: Install @angular-devkit/build-angular
-        run: npm install @angular-devkit/build-angular@15.1.3
 
       - name: Install Angular CLI
         run: npm install -g @angular/cli
