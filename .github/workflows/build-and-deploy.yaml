@@ -10,7 +10,7 @@ jobs:
       BUCKET: www.simegnewmulu.tech
       DIST: dist
       REGION: us-east-1
-      DIST_ID: E3EDTEM5PG6FFE
+      DIST_ID: E1V3HWCXCURVFR
 
     steps:
       - name: Checkout code
