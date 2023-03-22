@@ -1,5 +1,5 @@
 ---
-name: Build and Deploy Angular App to CloudFront
+name: Build and Deploy React App to CloudFront
 on:
   push:
     branches: [main]
@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET: www.simegnewmulu.tech
-      DIST: dist/
+      DIST: dist
       REGION: us-east-1
-      DIST_ID: E1V3HWCXCURVFR
+      DIST_ID: E3EDTEM5PG6FFE
 
     steps:
       - name: Checkout code
@@ -28,12 +28,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "18"
-
-      - name: Install Angular CLI
-        run: npm install -g @angular/cli
-
-      - name: Install Dev Kit
-        run: npm install @angular-devkit/build-angular --force
 
       - name: Install Dependencies
         run: |
