@@ -1,4 +1,4 @@
-name: Build and Deploy Angular App to CloudFront
+name: Build and Deploy React App to CloudFront
 on:
   push:
     branches: [main]
@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       BUCKET: www.simegnewmulu.tech
-      DIST: dist/frontend
+      DIST: build
       REGION: us-east-1
       DIST_ID: E1V3HWCXCURVFR
 
@@ -23,26 +23,25 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.REGION }}
 
-      - name: Install Node.js
+      - name: Set up Node.js environment
         uses: actions/setup-node@v2
         with:
-          node-version: "18"
+          node-version: "14"
 
       - name: Install Dependencies
         run: |
-          npm install -g @angular/cli
-          npm ci
+          node --version
+          npm ci --production
 
-      - name: Build Angular App
-        run: ng build
+      - name: Build Static Website
+        run: npm run build
 
-      - name: Deploy to S3 Bucket
+      - name: Copy files to the production website with the AWS CLI
         run: |
-          aws s3 sync --delete ${DIST} s3://${BUCKET} --region ${REGION}
+          aws s3 sync --delete ${{ env.DIST }} s3://${{ env.BUCKET }}
 
-      - name: Create CloudFront Invalidation
+      - name: Copy files to the production website with the AWS CLI
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id ${DIST_ID} \
-            --paths "/*" \
-            --region ${REGION}
+            --distribution-id ${{ env.DIST_ID }} \
+            --paths "/*"
