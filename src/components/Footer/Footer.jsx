@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import {CgProfile } from "react-icons/cg";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
-import { BsFacebook, BsSlack } from "react-icons/bs";
+import { BsFacebook} from "react-icons/bs";
 import { FiMail, FiPhone, FiPhoneCall, FiFileText } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 import { v4 as uuidv4 } from 'uuid';
@@ -27,7 +27,6 @@ const Footer = () => {
       [name]: value,
     });
   };
-  //Teddy
 
   const handleSubmit = async (event) => {
     event.preventDefault();
