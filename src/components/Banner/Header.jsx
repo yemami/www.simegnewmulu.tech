@@ -13,7 +13,7 @@ const Header = () => {
         <Nav bar={bar}>
             <span><a href="#home">Home</a></span>
             <span><a href="#service">Experience</a></span>
-            <span><a href="#project">Skills</a></span>
+            <span><a href="#project">Skill</a></span>
             <span><a href="#client">Education</a></span>
             <span><a href="#footer">Contact</a></span>
             {/* <span><a href="#blog">Blog</a></span> */}
