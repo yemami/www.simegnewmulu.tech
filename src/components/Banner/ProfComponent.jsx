@@ -59,7 +59,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src="https://avatars.githubusercontent.com/u/113940779?s=96&v=4"
+            src="https://lh3.googleusercontent.com/a/AGNmyxYwgnnhjWYgZ5tqOUd__dgMCQOkPkrHttuUvHSzGg=s360"
             alt="profile"
           />
         </Profile>
