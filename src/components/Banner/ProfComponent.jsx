@@ -31,7 +31,7 @@ const ProfComponent = () => {
           Possessing a deep understanding of the software development life cycle, 
           with experience working in fast-paced, deadline-driven development environments.
           A collaborative team player with excellent communication skills,
-          who excels at working with cross-functional and technical teams to deliver outstanding results.
+          who excels at Working with cross-functional and technical teams to deliver outstanding results.
           </p>
           <button onClick={scrollDown}>Let's talk</button>
           <Social>
