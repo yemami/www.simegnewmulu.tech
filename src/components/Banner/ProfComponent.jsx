@@ -31,7 +31,7 @@ const ProfComponent = () => {
           Possessing a deep understanding of the software development life cycle, 
           with experience working in fast-paced, deadline-driven development environments.
           A collaborative team player with excellent communication skills,
-          who excels at Working with cross-functional and technical teams to deliver outstanding results.
+          who excels at working with cross-functional and technical teams to deliver outstanding results.
           </p>
           <button onClick={scrollDown}>Let's talk</button>
           <Social>
@@ -59,7 +59,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src="https://avatars.githubusercontent.com/u/113940779?s=400&u=22dbc7b7be964b8fde97e2066ac9c87055b466ac&v=4"
+            src="https://avatars.githubusercontent.com/u/113940779?s=96&v=4"
             alt="profile"
           />
         </Profile>
