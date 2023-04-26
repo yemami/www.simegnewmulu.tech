@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import family from './family.jpg';
+import profile from './profile.jpg';
 const scrollDown = () => {
   window.scroll({
     top: 2000,
@@ -20,7 +20,7 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">ፋሚሊ በሚለው</h1>
+          <h1 className="green">Simegnew Mulu</h1>
           <h3>Fullstack Java Developer</h3>
           <p>
           Experienced Full-Stack Java , Spring Boot, Hibernate, 
@@ -59,7 +59,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src={family}
+            src={profile}
             alt="profile"
           />
         </Profile>
