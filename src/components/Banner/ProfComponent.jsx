@@ -20,7 +20,7 @@ const ProfComponent = () => {
           <h4>
             Hello <span className="green">I'am</span>
           </h4>
-          <h1 className="green">Simegnew Mulu</h1>
+          <h1 className="green">Samri Ke Lijua Gar</h1>
           <h3>Fullstack Java Developer</h3>
           <p>
           Experienced Full-Stack Java , Spring Boot, Hibernate, 
