@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-
+import samriEmrakelImage from './samri@emrakel.jpg';
 const scrollDown = () => {
   window.scroll({
     top: 2000,
@@ -59,7 +59,7 @@ const ProfComponent = () => {
       <Slide direction="right">
         <Profile>
           <img
-            src="https://lh3.googleusercontent.com/a/AGNmyxYwgnnhjWYgZ5tqOUd__dgMCQOkPkrHttuUvHSzGg=s360"
+            src={samriEmrakelImage}
             alt="profile"
           />
         </Profile>
