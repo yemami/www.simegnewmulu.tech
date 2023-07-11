@@ -23,7 +23,7 @@ let data = [
     },
     {
         img : "https://res.cloudinary.com/dw4mmejgp/image/upload/v1679258578/aws_hvlk0s.avif",
-        disc : "Proficiency in utilizing Amazon Web Services (AWS) to design and implement highly scalable and resilient solutions on the AWS platform. Experience with various AWS services such as EC2, S3, Lambda, RDS, and more."
+        disc : "Proficient in utilizing Amazon Web Services (AWS) to design and implement highly scalable and resilient solutions on the AWS platform. Experience with a wide range of AWS services, including EC2, ECS, EKS, ECS Fargate, ELB, EBS, S3, VPC, IAM, SQS, RDS, SNS, Lambda, CloudWatch, API Gateway, Terraform, Aurora, Route53, MSK, Kinesis, CloudFormation, Elastic Beanstalk, Autoscaling, DynamoDB, and more. Familiarity with monitoring tools such as Datadog to ensure efficient performance and effective management of AWS resources."
     },
     {
       img : "https://i.morioh.com/b93618229c.png",

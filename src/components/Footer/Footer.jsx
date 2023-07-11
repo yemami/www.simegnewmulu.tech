@@ -83,7 +83,7 @@ const Footer = () => {
             <h1>Address:</h1>
           </Slide>
           <Slide direction="left">
-            <p>1000 North 4th Street Fairfield, Iowa(IA), 52557</p>
+            <p>5 Marcia Way, Roseville, California 95747</p>
           </Slide>
         </div>
         <div className="links">

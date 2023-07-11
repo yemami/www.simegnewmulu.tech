@@ -7,7 +7,7 @@ import { Slide } from 'react-awesome-reveal';
 
 let clients = [
     {
-        years:"2022 - Present",
+        years:"Aug 2022 - April 2025",
         name : "Mahrishi International University",
         position : "MSc in Computer Science",
         img_url : "https://res.cloudinary.com/dw4mmejgp/image/upload/v1679264567/miu_naucl8.jpg",
@@ -16,7 +16,7 @@ let clients = [
           I am excited to apply my expertise to real-world challenges and drive impactful results in the industry.`
     },
     {
-        years:"2013 - 2017",
+        years:"Oct 2013 - Jul 2017",
         name : "Hawassa University",
         position : "BSc in Computer Science",
         img_url : "https://netstorage-tuko.akamaized.net/images/0fgjhs41agvqjl1si.jpg?imwidth=300",

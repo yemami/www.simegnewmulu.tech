@@ -21,32 +21,25 @@ const Services = () => {
             title={"Full Stack Java Developer"}
             disc={
             <p>
-            At MINAB IT SOLUTIONS, Addis Ababa, Ethiopia 2019-2022, I worked as a Full Stack Java Developer: Coordinated teams on client sites to develop,
-            analyze and maintain enterprise applications, provide data verification and conduct system trainings. 
-            Developed and deployed enterprise applications,Implemented Spring Security and Spring Dependency Injection,
-          	Developed and analyzed user requirements; translated to technical specifications,Developed functionalities according to client requirements,
-          	Tested and implemented applications and systems,Developed and implemented service interfaces using microservices,
-            Ensured quality of code; trained and mentored junior developers,Assisted in developing Hahujobs Industry Park labor recruitment application with biometric identification for worker and job seeker registration. 
-          
-            
+            At MINAB IT SOLUTIONS PLC, I worked as a Full Stack Java Developer from April 2019 to July 2022.
+            During my tenure, I developed and deployed enterprise applications using Java, Spring, and Spring Boot. 
+            I implemented Spring Security and Spring Dependency Injection for application security.
+            Additionally, I designed and implemented service interfaces using microservices in an AWS environment. 
+            I contributed to the development of a financial technology solution on a cloud-based platform. 
+            I utilized technologies such as Angular.js, React, and Node.js for front-end development.
             </p>}
           />
         </Slide>
         <Slide direction="up">
           <Card
             Icon={FaJava}
-            title={"Full Stack Java Developer"}
-            disc={`At AHADOO TECH IT PLC. SOLUTIONS, Addis Ababa, Ethiopia 2018-2019, 
-            I worked as a Software Developer & Hub Officer: Assisted in architecting, designing, and developing software using Java. 
-            Ensured code quality as key team leader and mentor.
-            I Contributed to full-stack 
-            projects, designed interactive websites, provided ongoing support, 
-            and used Java, JavaScript, Spring-Boot, React, Hibernate, MongoDB, 
-            Maven
-            Digitized stock, sales, supply, and market management systems. 
-            Implemented unit and integration testing using various frameworks. 
-            Assisted in software requirement and design specification process. 
-            Designed user interfaces; conducted back-end programming and database implementation. 
+            title={"Java Developer"}
+            disc={`
+            At AHADOO TECH IT SOLUTIONS PLC, I worked as a Java Developer from March 2018 to March 2019. 
+
+            During this time, I contributed to the digitization of stock, sales, supply, and market management systems.
+            I also assisted in software requirement and design specification processes, conducted back-end programming and database implementation, and designed user interfaces. 
+            Additionally, I utilized technologies such as Java, Spring, Spring Boot, AWS, and Angular. 
             `}
           />
         </Slide>
@@ -54,11 +47,10 @@ const Services = () => {
           <Card
             Icon={CgWebsite}
             title={"Software Developer"}
-            disc={`At EPIC APPAREL PLC., Hawassa, Ethiopia • 2017-2018 I worked as a Software Developer: Oversaw front- and back-end programming and maintenance of internal enterprise applications. 
-                  Built intuitive and functional user interfaces.
-                  Developed user requirements and translated to technical specifications.
-                  Implemented unit and integration testing. 
-                	Gathered, measured and organized data, improving data collection process. 
+            disc={`At EPIC APPAREL PLC, I worked as a Software Developer from July 2017 to March 2018. 
+            In this role, I utilized technologies such as Java, JavaScript, Git, and more to oversee front- and back-end programming and maintenance of internal enterprise applications. 
+            I focused on designing user interfaces, conducting back-end programming, and implementing databases. Additionally, I implemented unit and integration testing to ensure application quality.
+             I played a role in gathering, measuring, and organizing data to improve the data collection process. 
                   `}
           />
         </Slide>

@@ -8,8 +8,8 @@ const Projects = () => {
     <Container id='project'>
         <Zoom>
             <h1>Programming <span className="green">Skills</span></h1>
-            <p>Expertise in a range of key technologies including Java Core, JavaScript,
-                 Angular, React, Microservices, AWS, and MongoDB.</p>
+            <p>Demonstrated proficiency in Java, Spring, Spring Boot, AWS, Microservices, MongoDB, JavaScript, Angular, and React. 
+                Skilled in utilizing these technologies to develop robust and scalable software solutions.</p>
         </Zoom>
         <Slide>
             <SliderComp/>

@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { GiEarthAmerica } from "react-icons/gi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import cover from './cover.jpg';
+import cover  from './cover.jpg';
 const scrollDown = () => {
   window.scroll({
     top: 2000,
@@ -21,17 +21,13 @@ const ProfComponent = () => {
             Hello <span className="green">I'am</span>
           </h4>
           <h1 className="green">Simegnew Mulu</h1>
-          <h3>Fullstack Java Developer</h3>
+          <h3>Full Stack Java Developer</h3>
           <p>
-          Experienced Full-Stack Java , Spring Boot, Hibernate, 
-          Developer with a proven track record of delivering 
-          high-quality software solutions on-time and on-budget. 
-          Proficient in Angular, React front-end technologies,
-          as well as database development, data structures and microservices. 
-          Possessing a deep understanding of the software development life cycle, 
-          with experience working in fast-paced, deadline-driven development environments.
-          A collaborative team player with excellent communication skills,
-          who excels at working with cross-functional and technical teams to deliver outstanding results.
+          Skilled Full Stack Java Developer with 5+ years of experience delivering high-performance software solutions.
+          Proficient in Java, AWS, Spring Boot, JPA, Hibernate, JUnit, Mocha, Maven, JavaScript, MySQL, MongoDB, Angular, React, NodeJS, Express.JS, Git, Docker, and Kubernetes.
+          Experienced in all phases of the software development lifecycle, including AWS cloud-based solutions. 
+          Adept at front-end development using Angular and React, and proficient in database development and microservices in AWS. 
+          Strong collaboration and teamwork skills.
           </p>
           <button onClick={scrollDown}>Let's talk</button>
           <Social>
