@@ -7,7 +7,6 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook} from "react-icons/bs";
 import { FiMail, FiPhone, FiPhoneCall, FiFileText } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
-import { v4 as uuidv4 } from 'uuid';
 
 
 const Footer = () => {
@@ -48,7 +47,7 @@ const Footer = () => {
         console.log("phone")
         return;
       }
-      const response = await fetch("https://vzhmz1zk79.execute-api.us-east-1.amazonaws.com/correctVersion1/contact", {
+      const response = await fetch("https://1j2mkd4os7.execute-api.us-east-1.amazonaws.com/s1/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
