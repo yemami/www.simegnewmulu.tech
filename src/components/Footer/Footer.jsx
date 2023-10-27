@@ -12,11 +12,11 @@ import { v4 as uuidv4 } from 'uuid';
 
 const Footer = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    senderName: "",
+    senderEmail: "",
     phone: "",
     subject: "",
-    message: "",
+    messageBody: "",
   });
   const [formStatus, setFormStatus] = useState("");
 
@@ -31,26 +31,29 @@ const Footer = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      if(!formData.name || !formData.email || !formData.subject || !formData.message){
+      if(!formData.senderName || !formData.senderEmail || !formData.subject || !formData.messageBody){
         setFormStatus("Please fill in all required fields");
+        console.log("empty")
         return;
       }
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(formData.email)) {
+      if (!emailRegex.test(formData.senderEmail)) {
         setFormStatus("Please enter a valid email address");
+        console.log("email")
         return;
       }
       const phoneRegex = /^\d{10}$/;
       if (formData.phone && !phoneRegex.test(formData.phone)) {
         setFormStatus("Please enter a valid 10-digit phone number");
+        console.log("phone")
         return;
       }
-      const response = await fetch("https://tvok5rugtk.execute-api.us-east-1.amazonaws.com/prod/contact-form", {
+      const response = await fetch("https://vzhmz1zk79.execute-api.us-east-1.amazonaws.com/correctVersion1/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({"id": uuidv4(),"name": formData.name,"email": formData.email, "subject": formData.subject, "message": formData.message, "phone": formData.phone}),
+        body: JSON.stringify(formData),
       });
       if (response.ok) {
         setFormStatus("Message sent successfully!");
@@ -163,7 +166,7 @@ const Footer = () => {
               <span>
                 <CgProfile />
               </span>
-              <input type="text" placeholder="Fullname..." name="name" value={formData.name} onChange={handleInputChange} />
+              <input type="text" placeholder="Fullname..." name="senderName" value={formData.name} onChange={handleInputChange} />
             </div>
             <div className="phone">
               <span>
@@ -175,7 +178,7 @@ const Footer = () => {
               <span>
                 <MdAlternateEmail />
               </span>
-              <input type="email" placeholder="Email..." name="email" value={formData.email} onChange={handleInputChange} />
+              <input type="email" placeholder="Email..." name="senderEmail" value={formData.email} onChange={handleInputChange} />
             </div>
             <div className="subject">
               <span>
@@ -187,7 +190,7 @@ const Footer = () => {
               <span className="messageIcon">
                 <FiMail />
               </span>
-              <textarea cols="30" rows="10" placeholder="Message..." name="message" value={formData.message} onChange={handleInputChange}></textarea>
+              <textarea cols="30" rows="10" placeholder="Message..." name="messageBody" value={formData.message} onChange={handleInputChange}></textarea>
             </div>
             <button onClick={handleSubmit}>Submit</button>
             {formStatus && <p>{formStatus}</p>}
